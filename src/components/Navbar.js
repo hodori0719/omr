@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
 import ReorderIcon from '@material-ui/icons/Reorder';
 
@@ -20,11 +20,17 @@ function Navbar() {
                     <ReorderIcon /> 
                 </button>
             </div>
+            <div className="homeButton">
+                <Link to="/"> june yoo</Link>
+            </div>
             <div className="links">
-                <Link to="/"> home </Link>
-                <Link to="/about"> about </Link>
-                <Link to="/projects"> projects </Link>
-                <Link to="/music"> music </Link>
+                <NavLink className="homeLink" to="/"> home </NavLink>
+                <NavLink to="/about"> about </NavLink>
+                <NavLink to="/projects"> projects </NavLink>
+                <NavLink to="/music"> music </NavLink>
+                <div className="additional">
+                    dark mode
+                </div>
             </div>
         </div>
     <div className="filler"> 

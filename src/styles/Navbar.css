@@ -6,6 +6,7 @@
     display: flex;
     margin-bottom: 3em;
     position: absolute;
+    z-index: 100;
 }
 
 .navbar a {
@@ -23,17 +24,35 @@ a:visited{
     color: white;
 }
 
+.active {
+    font-weight: 700;
+}
+
 .links {
     flex-grow: 1;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    color: white;
+}
+
+.homeLink {
+    display: none;
+}
+
+.homeButton {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.additional {
+    display: none;
 }
 
 .toggleButton {
-    width: 10%;
+    width: 80px;
     height: 60px;
     display: flex;
     justify-content: flex-start;
@@ -66,24 +85,33 @@ a:visited{
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 100px;
+    margin-left: 20px;
 }
-  
+
+#open .homeButton {
+    display: none;
+}
+
+#open .homeLink, #open .additional{
+    display: inline;
+}
+
 #open a {
     width: 100%;
     text-align: left;
 }
 
-@media only screen and (max-width: 900px) {
+/*@media only screen and (max-width: 900px) {
     .navbar a {
       width: 70px;
     }
-  }
+  }*/
   
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     .toggleButton {
       display: flex;
     }
-    #close a {
+    #close .links {
       display: none;
     }
   }
