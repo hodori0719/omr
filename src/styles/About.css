@@ -1,9 +1,18 @@
 mark.yale {
-    color: white;
+    color: #fcfcfc;
     background-color: #00356B;
 }
 
 mark.mit {
-    color: white;
+    color: #fcfcfc;
     background-color: #A31F34;
+}
+
+p a:link, p a:visited {
+    color: #0979da !important;
+    text-decoration: none;
+}
+
+p a:hover{
+    text-decoration: underline;
 }

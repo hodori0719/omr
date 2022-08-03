@@ -1,0 +1,27 @@
+.tooltipimg {
+    position: relative;
+    display: inline-block;
+    color: #221e27;
+}
+  
+.tooltipimg .tooltiptext {
+    display: none;
+    background-color: #29242f;
+    color: #fcfcfc;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    z-index: 1;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+}
+  
+.tooltipimg:hover .tooltiptext {
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}

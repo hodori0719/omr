@@ -2,26 +2,36 @@
     height: 60px; 
     width: 100%;
     text-align: right;
-    background: #1e1b22;
+    background: #221e27;
     display: flex;
     margin-bottom: 3em;
     position: absolute;
+    justify-content: center;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
     z-index: 100;
 }
 
 .navbar a {
-    color: white;
+    color: #fcfcfc;
     text-decoration: none;
     margin: 20px;
-    font-size: 25px;
-  }
+    font-size: 18px;
+}
+
+.navContainer {
+    display: flex;
+    width: 92%;
+}
 
 a:link{
-    color: white;
+    color: #fcfcfc;
 }
 
 a:visited{
-    color: white;
+    color: #fcfcfc;
 }
 
 .active {
@@ -29,7 +39,6 @@ a:visited{
 }
 
 .links {
-    flex-grow: 1;
     height: 100%;
     display: flex;
     align-items: center;
@@ -41,13 +50,15 @@ a:visited{
 }
 
 .homeButton {
-  flex-grow: 1;
-  height: 100%;
-  display: flex;
-  align-items: center;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .additional {
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: none;
 }
 
@@ -60,32 +71,33 @@ a:visited{
 } 
 
 .toggleButton svg {
-    font-size: 50px;
+    font-size: 42px;
 }
 
 .toggleButton button {
     margin-left: 10px;
     background-color: transparent;
     border: none;
-    color: white;
+    color: #fcfcfc;
     cursor: pointer;
   }
 
 #open {
     height: 100vh;
-    transition: 0.3s;
+    transition: 0.3s height;
     position: fixed;
+    overflow: hidden;
 }
 
 #close {
-    transition: 0.3s;
+    transition: 0.3s height;
 }
   
 #open .links {
     flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
     margin-top: 100px;
-    margin-left: 20px;
 }
 
 #open .homeButton {
@@ -97,7 +109,6 @@ a:visited{
 }
 
 #open a {
-    width: 100%;
     text-align: left;
 }
 

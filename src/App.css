@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+/* main: '#9274b3',
+ darker: '#695087', */
+
 .App {
   text-align: center;
   /*font-family: "Courier New", "Lucida Console", monospace;*/
   font-family: "Roboto Mono", monospace;
   /* color: white;
   background-color: #2a2432;*/
-  color: #29242f;
-  background-color: white;
-  background: white;
+  color: #221e27;
+  background-color: #fcfcfc;
+  background: #fcfcfc;
 }
 
 body {
@@ -40,28 +43,40 @@ p {
   font-weight: 300;
 }
 
+mark {
+  background-color: #f3ff70;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted #29242f;
+  border-bottom: 1.5px dotted #221e27;
 }
 
 .tooltip .tooltiptext {
-  visibility: hidden;
+  display: none;
   width: 250px;
-  background-color: #29242f;
-  color: #fff;
+  background-color: #221e27;
+  color: #fcfcfc;
   text-align: center;
-  padding: 5px 0;
+  padding: 5px 10px;
   border-radius: 6px;
  
   position: absolute;
   z-index: 1;
-  bottom: 100%;
-  left: 50%; 
   margin-left: -125px;
 }
 
-.tooltip:hover .tooltiptext {
+/* .tooltip:hover .tooltiptext {
   visibility: visible;
+} */
+
+.tooltip:hover .tooltiptext {
+  display: inline-block;
+  position: absolute;
+  margin: auto;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }

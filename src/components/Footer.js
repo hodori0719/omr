@@ -1,8 +1,8 @@
 import React from "react";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import EmailIcon from '@material-ui/icons/Email';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from '@mui/icons-material/Email';
 import "../styles/Footer.css";
 
 function Footer() {
